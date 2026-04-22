@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/arpitabagri/Downloads/Portfolio/Portfolio/app/writing/page.js"],"sourcesContent":["/*Mahika Bagri*/\n/*December 14 2025*/\n\nimport Link from \"next/link\";\n"],"names":[],"mappings":"AAAA,cAAc,GACd,kBAAkB;AAElB","debugId":null}}]
+}
