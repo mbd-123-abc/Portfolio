@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/arpitabagri/Downloads/Portfolio/Portfolio/app/page.js"],"sourcesContent":["/*Mahika Bagri*/\n/*December 14 2025*/\n\nimport Link from \"next/link\";\nimport Image from \"next/image\";\n\nexport default function Home() {\n  return (\n    <div style={{ width: \"100vw\", height: \"100vh\" }}>\n     <img\n        src=\"/PortfolioEntry.png\"\n        alt=\"Portfolio Entrance\"\n        className=\"w-full h-full object-contain\"\n        priority\n      />\n      <Link href=\"/cafe\"  \n      className=\"absolute z-10\"\n      style={{\n        top: \"45%\",\n        left: \"45%\",\n        width: \"8%\",\n        height: \"7%\",\n      }}\n    />\n\n    </div>\n  );\n}\n"],"names":[],"mappings":"AAAA,cAAc,GACd,kBAAkB;;;;;AAElB;AACA;;;;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAI,OAAO;YAAE,OAAO;YAAS,QAAQ;QAAQ;;0BAC7C,8OAAC;gBACE,KAAI;gBACJ,KAAI;gBACJ,WAAU;gBACV,QAAQ;;;;;;0BAEV,8OAAC,0LAAI;gBAAC,MAAK;gBACX,WAAU;gBACV,OAAO;oBACL,KAAK;oBACL,MAAM;oBACN,OAAO;oBACP,QAAQ;gBACV;;;;;;;;;;;;AAKN","debugId":null}}]
-}
