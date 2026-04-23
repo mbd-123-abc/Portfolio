@@ -1,8 +1,7 @@
 /*Mahika Bagri*/
 /*April 22 2026*/
 
-import Link from "next/link";
-import Image from "next/image";
+import ProjectContainer from "../components/ProjectsContainer";
 
 export default function ProjectsPage() {
 
@@ -14,63 +13,31 @@ export default function ProjectsPage() {
   );
 
   return (
-    <div className="projects-container">
-      <h2>Professional Projects</h2>
-            <div className="project-grid">
-        {professional_projects.map((project) => (
-          <div key={project.id} className="project-card">
-            <div className="card-header">
-                <img
-                  src={project.image}
-                />
-            </div>
-            
-            <div className="card-body">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              
-              <div className="card-links">
-                <Link href={project.live} className="btn btn-primary">
-                  View Live
-                </Link>
-                <Link href={project.github} className="btn btn-outline">
-                  GitHub
-                </Link>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+    <div
+      style={{
+          backgroundColor:"#000000"
+      }}
+    >
 
-      <h2>Personal Projects</h2>
-      
-      <div className="project-grid">
-        {personal_projects.map((project) => (
-          <div key={project.id} className="project-card">
-            <div className="card-header">
-              <span>
-                <img
-                  src={project.image}
-                />
-              </span>
-            </div>
-            
-            <div className="card-body">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              
-              <div className="card-links">
-                <Link href={project.live} className="btn btn-primary">
-                  View Live
-                </Link>
-                <Link href={project.github} className="btn btn-outline">
-                  GitHub
-                </Link>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      <ProjectContainer
+        projects={professional_projects}
+        title="Professional Projects"
+        h2Color="#ff2f28e1"
+        cardColor="rgba(255, 255, 255, 0.968)"
+        cardHeadColor= "#2e2a2a"
+        alive="View Live"
+        raw="GitHub"
+      />
+
+      <ProjectContainer
+        projects={personal_projects}
+        title="Personal Projects"
+        h2Color="#45ff28e1"
+        cardColor="rgba(255, 255, 255, 0.968)"
+        cardHeadColor= "#2e2a2a"
+        alive="View Live"
+        raw="GitHub"
+      />
     </div>
   );
 }

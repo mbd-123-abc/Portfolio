@@ -1,5 +1,5 @@
 /*Mahika Bagri*/
-/*December 23 2025*/
+/*April 22 2026*/
 
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
@@ -38,19 +38,15 @@ body {
   min-height: 100%;
 }
 
-/*code*/
-
 .projects-container h2 {
   margin-top: 2rem;
   font-family: Nunito;
   text-align: center;
-  margin-bottom: 2rem;
   font-size: 3rem;
-  color: #000000;
+  color: #ffffffc5;
 }
 
 .projects-container {
-  background: #ffbea6;
   padding: 0 2rem
 }
 
@@ -58,10 +54,10 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  padding: 2rem;
 }
 
 .project-card {
-  background: white;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -70,13 +66,12 @@ body {
   flex-direction: column;
 }
 
-.project-card:hover {
+  .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 15px var(--hover-color);
 }
 
 .card-header {
-  background-color: #feae94;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,5 +104,3 @@ body {
   display: flex;
   gap: 1rem;
 }
-/*contact*/
-/*books*/
