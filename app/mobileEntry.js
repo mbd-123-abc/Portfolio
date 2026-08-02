@@ -11,6 +11,7 @@ export default function MobileEntry() {
       <div style={{ position: "relative", minHeight: "100vh" }}>
         <img
           src="/PortfolioEntryMobile.png"
+          alt="Portfolio Entrance"
           className="w-full h-full object-contain absolute inset-0 block"
           priority
         />
