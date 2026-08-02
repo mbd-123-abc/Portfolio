@@ -1,28 +1,21 @@
 /*Mahika Bagri*/
-/*December 14 2025*/
+/*August 1 2026*/   
 
-import Link from "next/link";
-import Image from "next/image";
+"use client";
+import { useState, useEffect } from "react";
+import DesktopEntry from "./desktopEntry";
+import MobileEntry from "./mobileEntry";
 
-export default function Home() {
-  return (
-    <div style={{ width: "100vw", height: "100vh" }}>
-     <img
-        src="/PortfolioEntry.png"
-        alt="Portfolio Entrance"
-        className="w-full h-full object-contain"
-        priority
-      />
-      <Link href="/cafe"  
-      className="absolute z-10"
-      style={{
-        top: "45%",
-        left: "45%",
-        width: "8%",
-        height: "7%",
-      }}
-    />
+export default function Page() {
+  const [isMobile, setIsMobile] = useState(true);
 
-    </div>
-  );
+  useEffect(() => {
+    const checkSize = () => setIsMobile(window.innerWidth < 768);
+    
+    checkSize(); 
+    window.addEventListener("resize", checkSize);
+    return () => window.removeEventListener("resize", checkSize);
+  }, []);
+
+  return isMobile ? <MobileEntry /> : <DesktopEntry />;
 }
