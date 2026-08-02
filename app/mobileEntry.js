@@ -2,7 +2,6 @@
 /*August 1 2025*/
 
 import Link from "next/link";
-import Image from "next/image";
 import Footer from "./components/Footer";
 
 export default function MobileEntry() {
@@ -12,7 +11,7 @@ export default function MobileEntry() {
         <img
           src="/PortfolioEntryMobile.png"
           alt="Portfolio Entrance"
-          className="w-full h-full object-contain absolute inset-0 block"
+          className="w-full h-full object-contain fixed top-0 left-0 block"
           priority
         />
 
@@ -28,6 +27,9 @@ export default function MobileEntry() {
         />
       </div>
 
+      <footer className="top-160 fixed">
+        <Footer />
+      </footer>
       
     </div>
   );
